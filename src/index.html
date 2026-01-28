@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Parents Luxuria - Premium Senior Wellness & Lifestyle Care</title>
+    <meta name="description" content="Premium senior wellness platform offering CareNest, NutriScan, MealAura, RejuvaFit, and BlissTouch services. Because They Deserve the Best Care in Their Golden Years." />
+    <meta name="keywords" content="senior care, wellness, healthcare, home nursing, health checkup, meal planning, fitness, grooming, elderly care" />
+    <meta name="author" content="Parents Luxuria" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Parents Luxuria - Premium Senior Wellness" />
+    <meta property="og:description" content="Because They Deserve the Best Care in Their Golden Years" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2C3E50" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Preconnect to External Domains -->
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    
+    <!-- Font Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Performance Hints -->
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    
+    <!-- Accessibility -->
+    <meta name="color-scheme" content="light dark" />
+    
+    <style>
+      /* Critical CSS - Inline for immediate render */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html {
+        font-family: Inter, system-ui, -apple-system, sans-serif;
+        font-size: 18px;
+        scroll-behavior: smooth;
+      }
+      
+      body {
+        background-color: #ECF0F1;
+        color: #34495E;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      /* Loading spinner */
+      #app-loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ECF0F1;
+        z-index: 9999;
+      }
+      
+      .spinner {
+        width: 48px;
+        height: 48px;
+        border: 4px solid #2C3E50;
+        border-top-color: #F39C12;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      /* Hide loading once app is ready */
+      #root:not(:empty) ~ #app-loading {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- App Root -->
+    <div id="root"></div>
+    
+    <!-- Loading Fallback -->
+    <div id="app-loading">
+      <div class="spinner"></div>
+    </div>
+    
+    <!-- Main Script -->
+    <script type="module" src="/main.tsx"></script>
+    
+    <!-- No JavaScript Fallback -->
+    <noscript>
+      <div style="padding: 2rem; text-align: center; font-family: system-ui, sans-serif;">
+        <h1>JavaScript Required</h1>
+        <p>Please enable JavaScript to use Parents Luxuria.</p>
+      </div>
+    </noscript>
+  </body>
+</html>
